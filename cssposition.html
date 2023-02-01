@@ -1,0 +1,74 @@
+<html>
+<head>
+<style>
+
+.navlink{
+display:inline;
+position:relative;
+padding:10px;
+}
+
+.dropdown-link{
+list-style-type:none;
+display:block;
+}
+
+.dropdown-content{
+display:none;
+position:absolute;
+z-index:1; 
+background-color:yellow;
+padding:100px;
+width:150;
+}
+
+
+.dropdown:hover .dropdown-content{
+display:block;
+}
+
+.navlink:hover{
+background-color:black;
+
+}
+
+a{
+text-decoration:none;
+font-size:25px;
+padding-left:150px;
+}
+
+ul{
+position:relative;
+left:100px;
+}
+
+nav{
+background-color:red;
+padding:10px;
+}
+</style>
+</head>
+<body>
+<h1 align="center">Nalanda degree college </h1>
+
+<nav>
+<ul>
+<li class="navlink"><a href="">Home</a></li>
+<li class="navlink"><a href="">About</a></li>
+
+<li class="navlink dropdown">
+<a href="">Services</a>
+<ul class="dropdown-content">
+<li class="dropdown-link"><a href="">service1</a><li>
+<li  class="dropdown-link"><a href="">service2</a><li>
+<li  class="dropdown-link"><a href="">service3</a><li>
+<li class="dropdown-link"><a href="">service4</a><li>
+<li class="dropdown-link"><a href="">service5</a><li>
+</ul></li>
+<li class="navlink"><a href="">contact</a></li>
+</ul>
+</nav>
+
+</body>
+</html>
